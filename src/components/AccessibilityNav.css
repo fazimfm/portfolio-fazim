@@ -1,0 +1,146 @@
+.accessibility-nav {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.accessibility-nav h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.current-location {
+  background: #3498db;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.current-location h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.controls button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #27ae60;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.controls button:hover {
+  background: #229954;
+  transform: scale(1.05);
+}
+
+.controls button:focus {
+  outline: 3px solid #f39c12;
+  outline-offset: 2px;
+}
+
+.controls button.listening {
+  background: #e74c3c;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.transcript {
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.navigation-options {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.navigation-options h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background: white;
+  color: #3498db;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #3498db;
+  color: white;
+}
+
+.nav-buttons button:focus {
+  outline: 3px solid #f39c12;
+  outline-offset: 2px;
+}
+
+.instructions {
+  background: #fff3cd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #f39c12;
+}
+
+.instructions h3 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.instructions ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+  color: #856404;
+}
+
+@media (max-width: 600px) {
+  .accessibility-nav {
+    padding: 1rem;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+  
+  .nav-buttons {
+    flex-direction: column;
+  }
+}
